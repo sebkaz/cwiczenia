@@ -13,7 +13,7 @@ if __name__ == "__main__":
     producer = KafkaProducer(
         bootstrap_servers=[SERVER],
         value_serializer=lambda x: json.dumps(x).encode("utf-8"),
-        api_version=(2, 7, 0),
+        api_version=(3, 7, 0),
     )
     
     try:
